@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alien1.png" translatesAutoresizingMaskIntoConstraints="NO" id="q7Y-T1-k4s">
+                                <rect key="frame" x="12" y="79" width="130" height="195"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cXi-7y-dWZ" appends="YES" id="pEq-LJ-TWq"/>
+                                    <outletCollection property="gestureRecognizers" destination="rrG-pJ-IZf" appends="YES" id="ufp-NR-yXF"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="walk1.png" translatesAutoresizingMaskIntoConstraints="NO" id="VPr-zg-S4L">
+                                <rect key="frame" x="169" y="318" width="127" height="175"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1OL-a1-cVh" appends="YES" id="peg-Hd-wOc"/>
+                                    <outletCollection property="gestureRecognizers" destination="BOa-F2-hyH" appends="YES" id="fYN-Ro-LgY"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fly1.png" translatesAutoresizingMaskIntoConstraints="NO" id="XBF-GX-CWq">
+                                <rect key="frame" x="137" y="99" width="176" height="195"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qQZ-Jc-jm2" appends="YES" id="sw2-aT-lHQ"/>
+                                    <outletCollection property="gestureRecognizers" destination="zm1-Z4-a6l" appends="YES" id="UHv-2k-tfv"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the images to start &amp; stop their animation. You can also drag them." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAI-H9-bU7">
+                                <rect key="frame" x="12" y="27" width="293" height="59"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="2sC-uK-tcN"/>
+                                    <constraint firstAttribute="width" constant="293" id="KUu-9r-Uda"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beam1.png" translatesAutoresizingMaskIntoConstraints="NO" id="cIQ-ee-lyf">
+                                <rect key="frame" x="12" y="305" width="130" height="195"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bYY-JX-KZx" appends="YES" id="w3y-0G-mnG"/>
+                                    <outletCollection property="gestureRecognizers" destination="e4S-OM-i0Q" appends="YES" id="BQm-5u-64T"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nAI-H9-bU7" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-2" id="JQF-yf-Je4"/>
+                            <constraint firstItem="nAI-H9-bU7" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="27" id="yz2-GZ-9pA"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="alien" destination="q7Y-T1-k4s" id="HB8-se-wde"/>
+                        <outlet property="beam" destination="cIQ-ee-lyf" id="16k-tZ-Cfe"/>
+                        <outlet property="fly" destination="XBF-GX-CWq" id="due-gR-Myc"/>
+                        <outlet property="walk" destination="VPr-zg-S4L" id="vfV-Aj-gS7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cXi-7y-dWZ">
+                    <connections>
+                        <action selector="AlienTap:" destination="vXZ-lx-hvc" id="DzX-if-Ezz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qQZ-Jc-jm2">
+                    <connections>
+                        <action selector="flyTap:" destination="vXZ-lx-hvc" id="DUQ-pW-bsH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bYY-JX-KZx">
+                    <connections>
+                        <action selector="beamTap:" destination="vXZ-lx-hvc" id="RVs-ht-Q3x"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="1OL-a1-cVh">
+                    <connections>
+                        <action selector="walkTap:" destination="vXZ-lx-hvc" id="vpY-5H-9DB"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="rrG-pJ-IZf">
+                    <connections>
+                        <action selector="alienDrag:" destination="vXZ-lx-hvc" id="WiT-NH-aRs"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="zm1-Z4-a6l">
+                    <connections>
+                        <action selector="alienDrag:" destination="vXZ-lx-hvc" id="jkN-Kb-dx0"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="e4S-OM-i0Q">
+                    <connections>
+                        <action selector="alienDrag:" destination="vXZ-lx-hvc" id="6ES-Qb-Xi0"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="BOa-F2-hyH">
+                    <connections>
+                        <action selector="alienDrag:" destination="vXZ-lx-hvc" id="eGK-aq-G14"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="227" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alien1.png" width="49" height="86"/>
+        <image name="beam1.png" width="120" height="150"/>
+        <image name="fly1.png" width="194" height="194"/>
+        <image name="walk1.png" width="75" height="125"/>
+    </resources>
+</document>
